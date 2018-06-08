@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  color: #A3A3A3;
+}
+
+main, footer {
+  text-align: center;
+}
+
+@keyframes title-change {
+  0% {
+    color: #A3A3A3;
+  }
+  25% {
+    color: #3399ff;
+  }
+  50% {
+    color: #0066ff;
+  }
+  75% {
+    color: #0000ff;
+  }
+  100% {
+    color: #A3A3A3;
+  }
+}
+#title {
+  animation-name: title-change;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+#tribute-info {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+a {
+  color: #00B3B3;
+}
+
+@keyframes point-left {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 1%;
+    color: white;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes point-right {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 1%;
+    color: white;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+#link:hover .fa-hand-point-left {
+  /* color: red; */
+  position: relative;
+  animation-name: point-left;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#link:hover .fa-hand-point-right {
+  position: relative;
+  animation-name: point-right;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
